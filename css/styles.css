@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+div.header {
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    margin: 0;
+    height: 64px;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+div.gridcontainer {
+    margin: 0;
+    top: -64px;
+    display: grid;
+    grid-template-columns: 1300px;
+    grid-template-rows: repeat(2, 200px);
+    justify-content: center;
+    align-content: center;
+    background-color: aquamarine;
+    background-image: url("/img/pexels-nataliia-kotovych-2162534794-38317404.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+div.box {
+    height: 220px;
+    background-attachment: fixed;
+}
