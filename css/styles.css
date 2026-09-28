@@ -17,21 +17,42 @@ div.header {
     box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 div.gridcontainer {
     margin: 0;
-    top: -64px;
     display: grid;
-    grid-template-columns: 1300px;
+    grid-template-columns: 67vw;
     grid-template-rows: repeat(2, 200px);
     justify-content: center;
     align-content: center;
-    background-color: aquamarine;
-    background-image: url("/img/pexels-nataliia-kotovych-2162534794-38317404.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
+    background: #9986e4;
+    background: linear-gradient(151deg, #9986e4, #c7e9ff, #f3f0ed);
+    background-attachment: fixed;
+    width: 100vw;
 }
 
 div.box {
     height: 220px;
     background-attachment: fixed;
+}
+
+div#top-box {
+    padding-top: 64px;
 }
