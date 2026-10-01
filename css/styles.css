@@ -220,7 +220,7 @@ div.about{
     grid-template-rows: auto auto;
     column-gap: 20px;
     row-gap: 40px;
-    padding: 0px 25%;
+    padding: 0px 20%;
     margin-top: 150px;
     margin-bottom: 85px;
     }
@@ -301,7 +301,7 @@ div.work{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    padding: 0px 25%;
+    padding: 0px 20%;
     margin-top: 150px;
     margin-bottom: 85px;
     }
