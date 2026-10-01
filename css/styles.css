@@ -287,6 +287,115 @@ div.about{
 
 /* End of About */
 
+/* Work */
+
+div.work{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 0px 25%;
+    margin-top: 150px;
+    margin-bottom: 85px;
+    max-width: fit-content;
+    }
+
+    div.project{
+        display: grid;
+        grid-template-areas:
+            "project-picture project-info";
+        column-gap: 20px;
+        row-gap: 20px;
+        max-width: 100%;
+    }
+
+        div.project-picture{
+            grid-area: 'project-picture';
+            max-width: 350px;
+        }
+
+            img.project-picture{
+                max-width: 100%;
+                border-radius: 25px;
+            }
+
+        div.project-info{
+            grid-area: 'project-info';
+            display: grid;
+            grid-template-areas:
+                "project-title"
+                "project-info"
+                "project-links";
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, auto);
+            max-width: 100%;
+            padding-bottom: 20px;
+        }
+
+            div.project-info h1{
+                padding: 0px;
+            }
+
+                h1.project-title{
+                    grid-area: 'project-title';
+                }
+
+
+                ul.project-details{
+                    grid-area: 'project-info';
+                    font-family: 'Inter', Arial, Helvetica, sans-serif;
+                    font-weight: 300;
+                    color: #FBF0FB;
+                    margin: 0;
+                    padding-bottom: 10px;
+                }
+
+    /* Buttons */
+
+    ul.project-links{
+        grid-area: 'project-links';
+    }
+
+    ul.project-links li{
+    padding-right: 10px;
+    }
+
+    li.button-link a button {
+        font-family: 'Inter', Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #300E60;
+        margin: 0;
+    }
+
+    button#preview {
+    background-color: #F86CFF;
+    border: none;
+    border-radius: 7px;
+    padding: 15px 10px;
+    }
+
+        button#preview:hover {
+            background-color: #FBF0FB;
+            cursor: pointer;
+        }
+
+    button#github-link {
+        display: inline-block;
+        background-color: #6CE4FF;
+        border: none;
+        border-radius: 7px;
+        padding: 15px 10px;
+    }
+
+        button#github-link:hover {
+        display: inline-block;
+        background-color: #FBF0FB;
+        cursor: pointer;
+        }
+
+/* End of Work */
+
+
 /* Footer */
 
 div.footer {
